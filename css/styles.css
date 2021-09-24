@@ -1,0 +1,523 @@
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      /* height: 100%; */
+      font-family: Poppins-Regular, sans-serif;
+  }
+  
+  /*---------------------------------------------*/
+  a {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+      color: rgb(118,192,33)
+  }
+  p {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+     color:#666666;
+}
+h1,h2,h3,h4,h5,h6{
+  padding: 10px;
+}
+.contact-h{
+  letter-spacing: 10px;
+  font-size: 20px;
+  color: #111;
+  margin: 10px 0 30px 0;
+  text-transform: uppercase;
+  }
+.fa-check{
+  color: rgb(118,192,33);
+}
+  /*------------------------------------------------------------------
+  [ Button ]*/
+  .sentiment-btn {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    height: 50px;
+    background: rgb(118,192,33);
+    padding: 0 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin-left: 0px;
+  }
+  
+  .sentiment-btn:hover {
+    background: #333333;
+  }
+  .negative-btn{
+      cursor: pointer;
+    background: rgb(118,192,33);
+    color: #fff;
+  }
+  .negative-btn:hover{
+  background: #000000;
+  color: #fff;
+}
+ /*------------------------------------------------------------------
+  [ Background ]*/
+  .layer{
+      height: 620px;
+      width: 100% !important;
+      /* width: 746px; */
+     background-image: url("../images/layer\ 1\ \(2\).jpg");
+     background-size: 100% 100%;
+  }
+  .layer-2{
+      background-image: url("../images/background\ 2.jpg");
+      height: auto;
+      width: 100% !important;
+      background-size: 100% 100%;
+  }
+   /*------------------------------------------------------------------
+  [ Navbar ]*/
+  .navbar .navbar-nav{
+    font-family: Poppins-Bold;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link{
+      color: #fff;
+  }
+  .navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #000000;
+}
+.navbar .navbar-nav .nav-item .nav-link:focus{
+  color: #000000 !important;
+}
+.navbar .navbar-nav .nav-item.active > .nav-link {
+  color: #000000 !important;
+  border-bottom: 1px solid #000;
+   }
+  .nav-btn{
+      cursor: pointer;
+  }
+  .nav-btn:hover{
+      color: #000000;
+  }
+  
+   /*------------------------------------------------------------------
+  [ Card]*/
+  .card{
+    border-bottom: 2px solid rgb(118,192,33);
+    margin-top: 20px;
+    height: 330px;
+    text-align: center;
+  }
+  .card-img-top{
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+  .card-title{
+    font-size: 20px;
+  }
+   /*------------------------------------------------------------------
+  [ Works ]*/
+  .svg img{
+    height: 30px;
+    width: 30px;
+      margin-top: 50px;
+      margin-left: 50px;
+  }
+  .svg-left img{
+    height: 30px;
+    width: 30px;
+      margin-top: 50px;
+      margin-left: 10px;
+  }
+  .last-img img{
+    height: 250px;
+    width: 540px;
+  }
+  .last-img-2 img{
+    width: 400px;
+  }
+  .repu-bg{
+    background-image: url("../images/repu-bg.jpeg");
+    color: #fff;
+  }
+  .phones-bg{
+    background-image: url("../images/phone-bg.jpeg");
+  }
+   /*------------------------------------------------------------------
+  [ Footer ]*/
+  .footer-bg{
+    background-image: url("../images/phone-bg.jpeg");
+    width: 100%;
+  }
+  h5{
+    color: rgb(118,192,33)
+  }
+  /*------------------------------------------------------------------
+  [ Responsive ]*/
+  
+  @media screen and (max-width: 1024px) {
+    .sentiment-btn{
+        font-size: 12px;
+    }
+    .negative-btn{
+      font-size: 12px;
+      width: 125px;
+    margin-left: -8px;
+}
+    .card{
+      text-align: center;
+      height: 380px;
+    }
+    .card-img-top{
+      margin-left: 75px;
+      margin-top: 30px;
+    }
+    .card-title{
+      line-height: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .sentiment{
+          padding-left: 0 !important;
+         
+      }
+    .layer-2-container{
+      padding: 10px !important;
+    }
+    .negative-btn{
+      font-size: 10px;
+      width: 110px;
+    margin-left: -15px;
+}
+    .card{
+      height: 320px;
+    }
+    .card-img-top{
+      margin-left: 130px;
+      margin-top: 30px;
+    }
+    .card-title{
+      line-height: 30px;
+    }
+    hr{
+      /* display: none; */
+    }
+    .svg img{
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    .svg-left img{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .repu-bg{
+     text-align: center !important;
+    }
+    .phones-bg{
+      text-align: center !important;
+     }
+     .last-img img{
+      height: auto;
+      width: auto;
+    }
+    .last-img-2 img{
+      /* height: 250px; */
+      width: auto;
+    }
+    
+  }
+  @media screen and (max-width: 425px) {
+    .sentiment{
+        padding: 0 !important;
+        padding-top: 20px !important;
+    }
+    .layer{
+      height: auto;
+    }
+    .navbar-nav{
+        background-color:  #E9ECF1 ;
+        /* border-radius: 30px; */
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+    .navbar-nav .nav-item .nav-link{
+       border-bottom: 2px solid rgb(118,192,33);
+       color: rgb(118,192,33) !important;
+    }
+    .nav-btn{
+        margin-top: 10px;
+        background-color: rgb(118,192,33);
+        color: #fff;
+    }
+    .layer-img img{
+      height: auto;
+      width: 400px;
+    }
+    .tester{
+        padding: 15px !important;
+    }
+    .analyzer{
+        text-align: left !important;
+        padding-left: 25px !important;
+    }
+    .layer-2 {
+      padding-bottom: 20px !important;
+      padding-top: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 0 !important;
+      
+    }
+    .layer-2-container{
+      padding-left: 25px !important;
+      text-align: left !important;
+    }
+    .layer-2-h3{
+      font-weight: 550;
+      line-height: 40px;
+    }
+    .negative-btn{
+      font-size: 15px;
+      width: auto;
+    margin: 0px;
+}
+    .card{
+      text-align: center;
+      height: auto;
+    }
+    .card-img-top{
+      margin-left: 170px;
+      margin-top: 30px;
+    }
+    hr{
+      display: block;
+    }
+    .svg img{
+      margin-left: 10px;
+      padding: 0 !important;
+      margin-bottom: 20px;
+    }
+    .svg-left img{
+      margin-bottom: 20px;
+      padding: 0 !important;
+    }
+    .dashboard-h3{
+      padding: 0 !important;
+    }
+    .dashboard-p{
+      padding: 0 !important;
+    }
+    .last-bg{
+      text-align: center !important;
+     }
+     .last-bg-2{
+       text-align: center !important;
+      }
+      .last-img img{
+       height: auto;
+       width: 300px;
+     }
+     .last-img-2 img{
+       width: 300px;
+     }
+     .last-img-2, .last-img{
+      margin-left: -35px;
+    }
+     .repu-h3{
+       font-size: 25px;
+      font-weight: 700;
+     }
+     .edge-h3{
+       font-size: 24px;
+      font-weight: 700;
+     }
+     .float-left{
+       text-align: left !important;
+       margin-left: 5px;
+     }
+     .footer-col{
+       margin-left: 20px;
+     }
+     h5{
+       padding-left: 0;
+     }
+  }
+  @media screen and (max-width: 375px) {
+    .sentiment{
+        padding: 0 !important;
+        padding-top: 20px !important;
+    }
+    .layer-img img{
+      height: auto;
+      width: 350px;
+    }
+    .layer-2-h3{
+      font-size: 25px;
+      font-weight: 550;
+      line-height: 40px;
+    }
+    .card-img-top{
+      margin-left: 140px;
+      margin-top: 30px;
+    }
+    .dashboard-h3-100{
+      font-size: 25px;
+      line-height: 30px;
+    }
+    .svg img{
+      margin-left: 0;
+    }
+    .svg-left img{
+      margin-bottom: 20px;
+      padding: 0 !important;
+    }
+    .dashboard-h3{
+      padding: 0 !important;
+    }
+    .dashboard-p{
+      padding: 0 !important;
+    }
+    .last-img-2, .last-img{
+      margin-left: -35px;
+    }
+    .repu-h3{
+      font-size: 23px;
+      font-weight: 700;
+
+    }
+    .edge-h3{
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+  @media screen and (max-width: 320px) {
+
+    .sentiment{
+        padding: 0 !important;
+        padding-top: 20px !important;
+    }
+    .sentiment-btn{
+        margin-left: -10px;
+    }
+    .layer-img img{
+      height: auto;
+      width: 300px;
+    }
+    .analayzer-h3{
+        font-size: 25px;
+    }
+    .analayzer-h4{
+        font-size: 19px;
+        padding: 0 !important;
+    }
+    .analayzer-h6{
+        font-size: 13px;
+        padding: 0 !important;
+    }
+    .layer-2-h3{
+      font-size: 28px;
+      font-weight: 550;
+      line-height: 40px;
+    }
+    .card-img-top{
+      margin-left: 120px;
+      margin-top: 30px;
+    }
+    .card-title{
+      line-height: 30px;
+    } 
+    .dashboard-h3-100{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .svg img{
+      margin-left: 0;
+    }
+    .svg-left img{
+      margin-bottom: 20px;
+      padding: 0 !important;
+    }
+    .dashboard-h3{
+      padding: 0 !important;
+    }
+    .dashboard-p{
+      padding: 0 !important;
+    }
+    .last-img-2, .last-img{
+      margin-left: -35px;
+    }
+    .repu-h3{
+      font-size: 19px;
+      font-weight: 700;
+
+    }
+    .edge-h3{
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .float-left{
+      text-align: left !important;
+      margin-left: 1px;
+    }
+    .footer-col{
+      margin-left: 20px;
+    }
+    .footer-a, span{
+      font-size: 12px;
+  
+    }
+  }
+  /*------------------------------------------------------------------
